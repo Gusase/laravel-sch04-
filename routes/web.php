@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', fn () => view('welcome'));
+
+Route::get('/me', fn () => view('me'));
+
+Route::get('/u/{name}', fn ($name) => view('user', ['user_name' => $name]));
