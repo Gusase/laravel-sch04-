@@ -5,7 +5,7 @@
         <div class="text-center">
             <h1
                 class="text-slate-900 font-extrabold text-4xl sm:text-5xl font-mona100 tracking-tight text-center dark:text-white">
-                Semua siswa👻</h1>
+                Semua guru 😘</h1>
 
             <div class="relative overflow-x-auto mt-12">
                 <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 font-mona100">
@@ -44,9 +44,7 @@
                                     {{$siswa['name'] }}
                                 </a>
                             </td>
-                            <td @class(['px-6','py-4','text-gray-700','dark:text-gray-300'=>$siswa['gender'] ==
-                                'Male','dark:text-pink-600'=>
-                                $siswa['gender'] == 'Female','text-base'])>
+                            <td class="px-6 py-4 text-gray-700 dark:text-gray-300 text-base">
                                 {{$siswa['gender'] }}
                             </td>
                             <td class="px-6 py-4 leading-6 font-semibold text-sky-500 dark:text-sky-400">
