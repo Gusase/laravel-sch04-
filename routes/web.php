@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CollectionController;
 use App\Http\Controllers\SiswaController;
 use Illuminate\Support\Facades\Route;
 
@@ -44,3 +45,5 @@ Route::get('siswa/{name}/nilai', function ($name) {
 
     return view('siswa.nilai', ['name' => $name, 'nilai' => 90, 'data' => $data]);
 })->name('nilaiSiswa');
+
+Route::get('unrealese', [CollectionController::class, 'index'])->name('ex.first');
